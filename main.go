@@ -7,17 +7,23 @@ func main() {
 }
 
 //int before { = the type of variable being returned
+func returnSaul() string {
+	return "Saul"
+}
+
 func returnOne() int {
 	return 1
 }
 
 func onePlusOne() int {
-	return 0
+	two := 1 + 1
+	return two
 }
 
 func sayHello() string {
-	//fmt.Println("Hello!")
-	return ""
+	greeting := "Hi"
+	fmt.Println(greeting)
+	return "Hello!"
 }
 
 //name = the variable name. Here, name is a parameter
@@ -26,6 +32,10 @@ func sayHello() string {
 func sayHelloTo(name string) string {
 	//CHALLENGE: Print out the string "Hello, Pal"
 
-	helloString := "Hello, "
+	helloString := "Hello, " + name
 	return helloString
+}
+
+func multiplythreebyfour() int {
+	return 12
 }
